@@ -1,0 +1,583 @@
+/* Hide Tags in Detailed Display */ 
+[aria-label="Tags"]{display:none;} 
+#tags{display:none;} 
+
+/*--------Top Banner ---------------*/
+
+/*Top Banner Background Color */
+.prm-primary-bg.prm-hue1, prm-spinner.prm-hue1.overlay-cover.light-on-dark:after, prm-topbar .top-nav-bar, prm-search-bar.prm-hue1 {
+	background-color: #404040; 
+}
+
+/*-----User Area -------*/
+  /*UserName Guest */
+prm-user-area .user-name {
+    text-transform: none;
+    font-weight: 600;
+    color: #fff!important;
+    text-align: left;
+    max-width: 80px;
+}
+
+/*background for Guest Button And Icon */
+.prm-primary-bg.prm-hue2, prm-main-menu[menu-type=full] md-backdrop, prm-search-bookmark-filter .md-button, prm-spinner.prm-hue2.overlay-cover.light-on-dark:after, prm-user-area, prm-user-area md-fab-trigger>.md-button .md-fab-toolbar-background {
+    background-color: #404040;
+}
+
+  /*Hover */
+  /*NAV BAR REGULAR button hover */
+  prm-topbar .md-button:focus, prm-topbar .md-button:hover {
+      color: #fff !important;
+      background-color: BLACK !important;
+      box-shadow: none;
+  }
+
+  prm-user-area .user-menu-button .user-name {
+      text-transform: none;
+      font-weight: 600;
+      color: BLACK;
+      text-align: left;
+      max-width: 150px;
+  }
+
+/*  TOPBAR - USER AREA - HOVER COLOR */
+  md-fab-toolbar md-toolbar {
+      background-color: #404040 !important;
+      pointer-events: none;
+      z-index: 23;
+  }
+  
+/*Top Bar- User Area - Button Link Color - On Hover */
+/*Language Button hover */
+
+prm-topbar .md-button {
+  color: #fff !important;
+  text-transform: none;
+  height: 100%;
+  border-radius: 0;
+  margin: 0;
+}
+
+prm-user-area md-fab-toolbar .md-fab-action-item md-input-container md-select, prm-user-area md-fab-toolbar .md-fab-action-item md-input-container .md-input-container-dummy > .md-select-dummy, prm-user-area md-fab-toolbar ._md-fab-action-item md-input-container md-select, prm-user-area md-fab-toolbar ._md-fab-action-item md-input-container .md-input-container-dummy > .md-select-dummy {
+    color: #fff;
+    height: 100%;
+}
+
+/*User Area - Hover - Button  Color - My Library Card*/
+prm-user-area md-fab-toolbar .md-fab-action-item md-input-container.md-primoExplore-theme:not([disabled]) {
+    color: BLACK;
+}
+
+prm-user-area md-fab-toolbar .md-fab-action-item .md-button.md-primoExplore-theme:not([disabled]) {
+      color: BLACK;
+  }
+
+  /*User Area - Hover - Button on Hover Color - My Library Card*/
+prm-user-area md-fab-toolbar .md-fab-action-item .md-button.md-primoExplore-theme:not([disabled]):focus, prm-user-area md-fab-toolbar .md-fab-action-item .md-button.md-primoExplore-theme:not([disabled]):hover, prm-user-area md-fab-toolbar .md-fab-action-item md-input-container.md-primoExplore-theme:not([disabled]):focus, prm-user-area md-fab-toolbar .md-fab-action-item md-input-container.md-primoExplore-theme:not([disabled]):hover {
+    background-color: #eee;
+    color: #fff;
+    box-shadow: none!important;
+}
+
+/*Language Label - On Hover */
+prm-user-area md-fab-toolbar .md-fab-action-item md-input-container md-select:hover, prm-user-area md-fab-toolbar .md-fab-action-item md-input-container .md-input-container-dummy:hover {
+    color: #fff; /*Language - English- Text Color */
+    background-color: BLACK; /*background-color for English Label*/
+    height: 100%;
+}
+
+/*Search Bar Wrapper color */
+  prm-search-bar, prm-atoz-search-bar, prm-journals-search-bar, prm-browse-search-bar, prm-tags-search-bar {
+    background-color: BLACK; 
+ } 
+
+/*Facets Link Color */
+.section-title prm-icon {
+    color: BLACK;
+}
+
+.link-alt-color, .md-button.button-as-link.link-alt-color, .section-title prm-icon {
+    color: BLACK;
+}
+
+/*Details Tab Link and Icon Color */
+
+.prm-primary-color, .result-item-actions .custom-button, .result-item-actions .more-options-button, .md-autocomplete-suggestions .suggestion-scope, md-tab-content .tab-content-header md-input-container md-select-value .md-text {
+    color: BLACK; 
+}
+	
+	
+/*Links*/
+a, .md-button.arrow-link-button .button-content {
+  color: BLACK;
+}
+
+/*make the banner links larger*/
+prm-main-menu[menu-type=menu] .md-button
+{
+Font-size: 0.85em !important;
+}
+
+/*Capitalize main menu Links */
+prm-main-menu a
+{
+  text-transform: uppercase !important;  
+}
+
+/*Capitalize main menu Links */
+prm-main-menu a
+{
+  text-transform: uppercase !important;  
+}
+
+/* hide expand results */
+md-checkbox[aria-label="Add results beyond U of G's collection"] {
+  display:none;
+}
+
+md-checkbox[aria-label="Expand beyond library collections"] {
+  display:none;
+}
+
+/* colour ALL links */
+a {
+  color: #2174BB;  
+}
+
+a:hover, a:focus {
+  color: #2174BB;  
+  box-shadow: none;
+  text-decoration: underline;
+}
+
+.multiselect-facet-group.multiselect-inactive .md-chip md-checkbox {  
+    opacity: 1;
+    visibility: visible;
+    z-index: 100;
+    transform: scaleX(1);
+    transition: all 0s 0s;    
+}
+
+/* accounts msg */
+.ug-account-msg {  
+  font-size: 1.5em;
+  text-overflow: ellipsis;
+  padding-left: 24px;
+}
+
+/* style OUR Area on full display */
+.ug-our-usage {
+  font-weight: bold;
+  font-size: 1.2em;
+  padding-right: 0.2em;
+  padding-left: 0.2em;
+}
+
+.ug-our-yes {
+  background-image: initial;
+  background-color: #0f7d00;
+  color: #fff;  
+  border-color: rgb(63, 63, 63);
+}
+
+.ug-our-no {
+  background-image: initial;
+  background-color: #C20430;  
+  color: #fff;  
+  border-color: rgb(63, 63, 63);
+}
+
+.ug-our-ask {
+  background-image: initial;
+  background-color: #FFC72A;
+  color: #000000;  
+  border-color: rgb(63, 63, 63);
+}
+
+/* remove refwork references from menu */
+.my-refworks-ctm {
+  display:none !important;
+}
+
+.my-refworks-separator-ctm {
+  display:none !important;
+}
+
+/* homepage */
+
+/* OMNI logo on homepage */
+md-card > :not(md-card-content) img,
+md-card > img {
+  max-width: 300px;
+}
+
+/* column width on homepage */
+.flex-60,
+.layout-row > .flex-60 {
+  max-width: 100%;
+}
+
+.flex-40,
+.layout-row > .flex-40 {
+  max-width: 100%;
+}
+
+/* main logo and header */
+prm-topbar prm-logo {
+  max-width: none;    
+}
+ 
+prm-logo .product-logo {
+  padding: 0;
+}
+ 
+#banner {
+  width: 280px;
+}
+ 
+#banner a:last-of-type {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  padding: 0.5em 0.75em;  
+}
+ 
+/* REPORT AN ISSUE */
+
+#ug-report-issue-div {
+  margin-top:-8px;
+}
+
+/* On the report an issue form, have the labels not move into input field, ie. don't transalte */
+.ug-report-issue-form-wrapper md-input-container label:not(.md-no-float):not(._md-container-ignore) {
+  transform: none;
+}
+
+/* used to hide search UI report an issue button, which is then moved */
+.ug-display-none {
+  display:none;
+}
+
+/* handle report an issue mobile dislay adjustments, wrap labels */
+.ug-report-input-container label{
+  white-space: normal !important;
+}
+
+prm-search-result-list .search-results-container {
+  margin-top: 2.7em;
+}
+
+.ug-report-msg-div {
+  text-align: center;
+}
+
+.ug-report-msg-div-search {
+  text-align: center;
+  Font-size: 0.85em;
+}
+
+.ug-report-msg-div-search .md-button{
+  text-align: center;
+  Font-size: 1.0em;
+}
+
+.ug-report-issue-in-form-div h4 {
+  margin-top: 0;
+  margin-bottom: 1.0em;
+}
+
+/* handle askus popout */
+#askus-popout {
+  position: fixed;  
+  bottom: -19em;
+  right: 5em;
+  border-radius: 5px 5px 0 0;
+  width: 17em;
+  transition: all .2s ease-in-out;
+  box-shadow: 3px 3px 10px rgba(185, 185, 185, 0.4);
+  border: 1px solid rgba(185, 185, 185, 0.8);
+  background-color: white;
+  z-index: 99;
+}
+
+@media(max-width: 600px) {
+  #askus-popout {
+      right: 50%;
+      width: 17em;
+      margin-right: -9em;
+  }
+  
+}
+
+#askus-popout:hover, 
+#askus-popout:focus,
+#askus-popout[data-askus-popout-state="collapsed"]:hover,
+#askus-popout[data-askus-popout-state="collapsed"]:focus {  
+  bottom: -18.8em;
+  
+}
+
+#askus-popout[data-askus-popout-state="collapsed"] {  
+  bottom: -19em;
+  width: 9em;  
+}
+
+#askus-popout[data-askus-popout-state="expanded"] {
+  bottom: 0em;
+  width: 17em;  
+}
+
+#askus-popout .askus_tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;   
+}
+
+#askus-popout[data-askus-popout-state="expanded"] ul {
+  width: inherit;
+  visibility: visible;
+}
+
+#askus-popout[data-askus-popout-state="collapsed"] ul {  
+  width: 18em;
+  visibility: hidden;
+}
+
+#askus-popout a.tab-head img {
+  height: 1.4em;
+  margin-right: 0.5em;
+}
+
+#askus-popout a.tab-head {
+  color: white;
+  background-color: #C20430;
+  margin-bottom: 0.4em;
+  padding-top: 0.5em;
+  padding-bottom: 0.75em;
+  margin-left: 0;
+  border-radius: 5px 5px 0 0;
+  display: flex;
+  justify-content: center;
+}
+
+#askus-popout ul {
+  padding-left: 0;     
+}
+
+#askus-popout ul li {
+  list-style: none;   
+}
+
+/* END askus popout */
+
+@media only screen and (min-device-width : 768px) {
+  .ug-search-report-bar {
+    margin-top:6px;
+    margin-left:10px;  
+  }
+
+  .ug-report-issue-in-form-div {
+    margin-left: 2.0em;
+    margin-right: 2.0em;
+  }
+
+  .ug-report-div-search-mb {
+    text-align: center;
+    border: 5px solid;
+    display:none;
+  }
+
+  #banner {
+    width: 280px;
+  }
+
+  prm-topbar prm-logo {
+    max-width: none;
+    width: 280px;
+  }
+ 
+  #mainMenu a:last-of-type {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 0.5em 0.75em;  
+  }  
+}
+
+/* limits in mobile portrait modes */
+@media only screen and (max-device-width : 480px) {
+  /* hide the report ieeue button on phone / small mobile */
+  #ug-report-issue-search-button-div {
+    display:none;
+  }
+
+  .ug-report-issue-in-form-div {
+    margin-left: 0.25em;
+    margin-right: 0.25em;
+  }
+
+  .ug-report-issue-in-form-div h4 {
+    margin-top: 0;
+    margin-bottom: 1.0em;
+  }
+
+  .ug-report-issue-in-form-div md-input-container {
+    margin: 38px 0;
+  }
+
+  .ug-report-div-search-mb {
+    text-align: center;
+    border: 5px solid;
+    display:block;
+  }
+
+  #banner {
+    width: 220px;
+  }
+
+  prm-topbar prm-logo {
+    max-width: none;
+    width: 220px;
+  }
+
+  #mainMenu a:last-of-type {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 0.5em 0.75em;
+  }
+  
+  #favorites-button {
+    display: block;
+    width: 30px;
+  }
+}
+
+/* limits in mobile portrait modes */
+@media only screen and (max-device-width : 680px) {
+  /* hide the report ieeue button on phone / small mobile */
+  #ug-report-issue-search-button-div {
+    display:none;
+  }
+
+  .ug-report-issue-in-form-div {
+    margin-left: 0.25em;
+    margin-right: 0.25em;
+  }
+
+  .ug-report-issue-in-form-div h4 {
+    margin-top: 0;
+    margin-bottom: 1.0em;
+  }
+
+  .ug-report-issue-in-form-div md-input-container {
+    margin: 38px 0;
+  }
+
+  .ug-report-div-search-mb {
+    text-align: center;
+    border: 5px solid;
+    display:block;
+  }
+
+  #banner {
+    width: 220px;
+  }
+
+  prm-topbar prm-logo {
+    max-width: none;
+    width: 220px;
+  }
+
+  #mainMenu a:last-of-type {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 0.5em 0.75em;
+  }
+  
+  #favorites-button {
+    display: block;
+    width: 30px;
+  }
+}
+
+/* hi-res portrait */
+@media only screen and (max-device-width : 812px) and (orientation : portrait) {
+  /* hide the report ieeue button on phone / small mobile */
+  #ug-report-issue-search-button-div {
+    display:none;
+  }
+
+  .ug-report-issue-in-form-div {
+    margin-left: 1.0em;
+    margin-right: 1.0em;
+  }
+
+  .ug-report-div-search-mb {
+    text-align: center;
+    border: 5px solid;
+    display:block;
+  }
+
+  #banner {
+    width: 220px;
+  }
+
+  prm-topbar prm-logo {
+    max-width: none;
+    width: 220px;
+  }
+
+  #mainMenu a:last-of-type {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 0.5em 0.75em;
+  }
+  
+  #favorites-button {
+    display: block;
+    width: 30px;
+  }
+}
+
+/*
+@media only screen and (max-device-width : 480px) {   
+  .ug-search-report-bar {
+    display:none;
+  }
+
+  .ug-report-issue-in-form-div {
+    margin-left: 1.0em;
+    margin-right: 1.0em;
+  }
+
+  .ug-report-div-search-mb {
+    text-align: center;
+    border: 5px solid;
+    display:block;
+  }
+
+  #banner {
+    width: 220px;
+  }
+
+  prm-topbar prm-logo {
+    max-width: none;
+    width: 220px;
+  }
+
+  #mainMenu a:last-of-type {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 0.5em 0.75em;
+  }
+  
+  #favorites-button {
+    display: block;
+    width: 30px;
+  }
+}
+*/

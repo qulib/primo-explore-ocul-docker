@@ -1,0 +1,140 @@
+/* Hide Tags in Detailed Display */ 
+[aria-label="Tags"]{display:none;} 
+#tags{display:none;} 
+
+/*--------Top Banner ---------------*/
+
+/*Top Banner Background Color */
+.prm-primary-bg.prm-hue1, prm-spinner.prm-hue1.overlay-cover.light-on-dark:after, prm-topbar .top-nav-bar, prm-search-bar.prm-hue1 {
+	background-color: #404040; 
+}
+
+/*-----User Area -------*/
+  /*UserName Guest */
+prm-user-area .user-name {
+    text-transform: none;
+    font-weight: 600;
+    color: #fff!important;
+    text-align: left;
+    max-width: 80px;
+}
+
+/*background for Guest Button And Icon */
+.prm-primary-bg.prm-hue2, prm-main-menu[menu-type=full] md-backdrop, prm-search-bookmark-filter .md-button, prm-spinner.prm-hue2.overlay-cover.light-on-dark:after, prm-user-area, prm-user-area md-fab-trigger>.md-button .md-fab-toolbar-background {
+    background-color: #404040;
+}
+
+  /*Hover */
+  /*NAV BAR REGULAR button hover */
+  prm-topbar .md-button:focus, prm-topbar .md-button:hover {
+      color: #fff !important;
+      background-color: BLACK !important;
+      box-shadow: none;
+  }
+
+  prm-user-area .user-menu-button .user-name {
+      text-transform: none;
+      font-weight: 600;
+      color: BLACK;
+      text-align: left;
+      max-width: 150px;
+  }
+
+/*  TOPBAR - USER AREA - HOVER COLOR */
+  md-fab-toolbar md-toolbar {
+      background-color: #404040 !important;
+      pointer-events: none;
+      z-index: 23;
+  }
+  
+/*Top Bar- User Area - Button Link Color - On Hover */
+/*Language Button hover */
+
+prm-topbar .md-button {
+  color: #fff !important;
+  text-transform: none;
+  height: 100%;
+  border-radius: 0;
+  margin: 0;
+}
+
+prm-user-area md-fab-toolbar .md-fab-action-item md-input-container md-select, prm-user-area md-fab-toolbar .md-fab-action-item md-input-container .md-input-container-dummy > .md-select-dummy, prm-user-area md-fab-toolbar ._md-fab-action-item md-input-container md-select, prm-user-area md-fab-toolbar ._md-fab-action-item md-input-container .md-input-container-dummy > .md-select-dummy {
+    color: #fff;
+    height: 100%;
+}
+
+/*User Area - Hover - Button  Color - My Library Card*/
+prm-user-area md-fab-toolbar .md-fab-action-item md-input-container.md-primoExplore-theme:not([disabled]) {
+    color: BLACK;
+}
+
+prm-user-area md-fab-toolbar .md-fab-action-item .md-button.md-primoExplore-theme:not([disabled]) {
+      color: BLACK;
+  }
+
+  /*User Area - Hover - Button on Hover Color - My Library Card*/
+prm-user-area md-fab-toolbar .md-fab-action-item .md-button.md-primoExplore-theme:not([disabled]):focus, prm-user-area md-fab-toolbar .md-fab-action-item .md-button.md-primoExplore-theme:not([disabled]):hover, prm-user-area md-fab-toolbar .md-fab-action-item md-input-container.md-primoExplore-theme:not([disabled]):focus, prm-user-area md-fab-toolbar .md-fab-action-item md-input-container.md-primoExplore-theme:not([disabled]):hover {
+    background-color: #eee;
+    color: #fff;
+    box-shadow: none!important;
+}
+
+/*Language Label - On Hover */
+prm-user-area md-fab-toolbar .md-fab-action-item md-input-container md-select:hover, prm-user-area md-fab-toolbar .md-fab-action-item md-input-container .md-input-container-dummy:hover {
+    color: #fff; /*Language - English- Text Color */
+    background-color: BLACK; /*background-color for English Label*/
+    height: 100%;
+}
+
+/*Search Bar Wrapper color */
+  prm-search-bar, prm-atoz-search-bar, prm-journals-search-bar, prm-browse-search-bar, prm-tags-search-bar {
+    background-color: BLACK; 
+ } 
+
+/*Facets Link Color */
+.section-title prm-icon {
+    color: BLACK;
+}
+
+.link-alt-color, .md-button.button-as-link.link-alt-color, .section-title prm-icon {
+    color: BLACK;
+}
+
+/*Details Tab Link and Icon Color */
+
+.prm-primary-color, .result-item-actions .custom-button, .result-item-actions .more-options-button, .md-autocomplete-suggestions .suggestion-scope, md-tab-content .tab-content-header md-input-container md-select-value .md-text {
+    color: BLACK; 
+}
+	
+	
+/*Links*/
+a, .md-button.arrow-link-button .button-content {
+  color: BLACK;
+}
+
+/*OCUL heading on the homepage*/
+.ocul-h2
+{
+padding: 24px 16px 16px;
+margin: 0;
+}
+
+/*make the banner links larger*/
+prm-main-menu[menu-type=menu] .md-button
+{
+Font-size: 0.85em !important;
+}
+
+/*Capitalize main menu Links */
+prm-main-menu a
+{
+  text-transform: uppercase !important;  
+}
+
+md-checkbox[aria-label="Add results beyond U of G's collection"] {
+  display:none;
+}
+
+md-checkbox[aria-label="Expand beyond library collections"] {
+  display:none;
+}

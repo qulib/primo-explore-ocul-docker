@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+  <div id="guelph_news">
+    <script src="https://feeds.feedburner.com/UofGuelph/Library?format=sigpro"
+         type="text/javascript"></script>
+    <div class="feedburnerFeedBlock"
+         id="UofGuelph/Libraryd1761kchvo7tg298ol0p0ae36k"></div><noscript>
+    <p>Subscribe to RSS headline updates from: <a href="https://feeds.feedburner.com/UofGuelph/Library"></a><br>
+    Powered by FeedBurner</p></noscript>
+  </div>https://app.lib.uoguelph.ca/api/get-events/ $http.get("https://app.lib.uoguelph.ca/api/get-events/"); $(document).ready(function() { alert("in jquery"); }); //This script requires momemntjs.js library, minified within the jsinject on drupal
+  jQuery(document).ready(function() { jQuery.ajax({ //PROD cal url: 'https://app.lib.uoguelph.ca/api/get-events/', // Tell jQuery we're expecting JSONP dataType: 'jsonp', type: 'GET', // Work with the response success: function( response ) { var
+  new_src = '
+  <div class="view-content">
+    <div class="item-list">
+      <ul>
+        '; var events_list = response.events; var row_count = 1; jQuery.each(events_list, function (key, value) { //determine and build the line item classes (l1) var row_class_num = 'views-row-' + String(row_count); var row_seq = 'views-row-even';
+        var row_special = ''; if (row_count == 1) { row_special = 'views-row-first'; } else if (row_count == 5) { row_special = 'views-row-last'; } //determine if odd or even using modulus if ((row_count % 2) &gt; 0) { row_seq = 'views-row-odd'; }
+        var purl = value.url.public; purl = purl.replace("http:", "https:"); var li_class = 'views-row ' + row_class_num + ' ' + row_seq + ' ' + row_special new_src = new_src + '
+        <li class="' + li_class + '">' new_src = new_src + '
+          <div class="views-field views-field-title">
+            <span class="field-content"><a href="'%20+%20purl%20+%20'">' + value.title + '</a></span>
+          </div>'; new_src = new_src + '
+        </li>' //build the time div new_src = new_src + '
+        <div class="views-field views-field-field-start-date-and-time">
+          <div class="field-content">
+            <span class="date-display-single">'; var date = moment(value.start); var start_date = date.format('dddd, MMMM Do, YYYY - ') + ' <span class="date-display-range"><span class="date-display-start"
+                  content="' + value.start + '"
+                  datatype="xsd:dateTime"
+                  property="dc:date">' + date.format('h:mm a') + '</span>'; var date = moment(value.end); new_src = new_src + start_date + ' to <span class="date-display-end"
+                  content="' + value.end + '"
+                  datatype="xsd:dateTime"
+                  property="dc:date">' + date.format('h:mm a') + '</span></span></span>'; date.toLocaleTimeString //close the time structures new_src = new_src + '
+          </div>
+        </div>'; row_count = row_count + 1; }); //close all the top level structures new_src = new_src + '
+      </ul>
+    </div>
+  </div>'; var more_text = 'see past workshops &amp; events'; if (row_count &gt; 1) { more_text = 'see all workshops &amp; events'; } // add in the more link new_src = new_src + '
+  <div class="more-link">
+    <a href="https://cal.lib.uoguelph.ca/calendar/library_events/?t=m">' + more_text + '</a>
+  </div>'; //append the new src jQuery('#ug-events-content').append(new_src); }, //handle the case where api fails (misformed jsonp) error: function( response ) { var more_text = 'see all workshops &amp; events'; var new_src = '
+  <div class="view-content">
+    <div class="item-list">
+      <ul>
+        '; new_src = new_src + '
+      </ul>
+    </div>
+  </div>'; // add in the more link new_src = new_src + '
+  <div class="more-link">
+    <a href="https://cal.lib.uoguelph.ca/calendar/library_events/?t=m">' + more_text + '</a>
+  </div>'; //append the new src jQuery('#ug-events-content').append(new_src); } }); }); $scope.data = data; $scope.name = data.name; $scope.salutation = data.salutation; $scope.greeting = data.greeting; $("[ng-model='nameNew']").val(data.name);
+  $("[ng-model='salutation']").val(data.salutation); $("[ng-model='greeting']").val(data.greeting);
+  <div id="guelph_news">
+    <script src="https://feeds.feedburner.com/UofGuelph/Library?format=sigpro"
+         type="text/javascript"></script>
+    <div class="feedburnerFeedBlock"
+         id="UofGuelph/Libraryd1761kchvo7tg298ol0p0ae36k"></div><noscript>
+    <p>Subscribe to RSS headline updates from: <a href="https://feeds.feedburner.com/UofGuelph/Library"></a><br>
+    Powered by FeedBurner</p></noscript>
+  </div>ares note: Cross-Origin Read Blocking (CORB) blocked cross-origin response https://insite.lib.uoguelph.ca/ares/getStatus.cfm?bibId=4408488 with MIME type text/html. See https://www.chromestatus.com/feature/5629709824032768 for more details.
+</body>
+</html>
+
+<!---
+    News feed work in progress tmp
+-->
+<md-card class="default-card">
+        <md-card-title>
+            <md-card-title-text>
+                <span class="md-headline">Library News & Events</span>
+                
+            </md-card-title-text>
+        </md-card-title>
+        <md-card-content>
+                <div id="guelph_news">
+                        <script src="https://feeds.feedburner.com/UofGuelph/Library?format=sigpro" type="text/javascript"></script>                            
+                        <!---
+
+                    <div ng-controller="ugFeedBurner">
+                
+                    </div>
+                        <script src="https://feeds.feedburner.com/UofGuelph/Library?format=sigpro" type="text/javascript"></script>
+                        -->
+                        <noscript><p>Subscribe to RSS headline updates from: <a href="https://feeds.feedburner.com/UofGuelph/Library"></a><br/>Powered by FeedBurner</p> </noscript>                            
+                </div>                                   
+                <div ng-controller="ugFeedBurnerController" ng-bind-html="greeting">                           
+                </div>
+                <div type="text/ng-template" id="feed-burner-uglib">
+                
+                </div>                            
+        </md-card-content>
+    </md-card>        
