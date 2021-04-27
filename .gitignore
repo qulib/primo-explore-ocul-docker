@@ -1,7 +1,5 @@
 .DS_Store
-custom/LAURIER
-custom/WATERLOO
+custom/
 /.devcontainer
 /.vscode
 *.zip
-/primo-explore/custom/GUELPH_CLASSIC_LOCAL
